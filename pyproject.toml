@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jurofaro"
+version = "0.1.0"
+description = "Inteligência independente de crédito: simulação SAC/Price e compra versus aluguel."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+jurofaro = "jurofaro.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
