@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1390" viewBox="0 0 1800 1390">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="context-stroke"/></marker></defs>
+<rect width="1800" height="1390" fill="#ffffff"/>
+<text x="60" y="65" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#0f172a">JuroFaro</text>
+<text x="270" y="65" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" fill="#475569">Arquitetura e jornada de uso · v0.1.0</text>
+<text x="60" y="105" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#475569">Conversa e terminal usam o mesmo motor financeiro determinístico, executado localmente.</text>
+<rect x="40" y="135" width="1720" height="435" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="60" y="161" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#64748b">ENTRADA, EXECUÇÃO E DEVOLUTIVA</text>
+<rect x="40" y="600" width="1720" height="390" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="60" y="626" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#64748b">MOTOR PYTHON · DATACLASSES IMUTÁVEIS · SEM I/O</text>
+<rect x="40" y="1020" width="1720" height="245" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="60" y="1046" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#64748b">SUPORTE AO PROJETO E EVOLUÇÃO</text>
+<polyline points="290,255 350,255" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="308.0" y="246.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#64748b">pedido</text>
+<polyline points="710,255 770,255" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="728.0" y="246.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#64748b">premissas</text>
+<polyline points="925,320 925,400" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="913.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#64748b">executa</text>
+<polyline points="380,470 490,470" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="423.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#64748b">argumentos</text>
+<polyline points="1080,470 1370,470" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arrow)" />
+<text x="1213.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#059669">retorno do motor</text>
+<polyline points="1555,410 1555,340" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arrow)" />
+<text x="1543.0" y="366.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#059669">JSON / texto</text>
+<polyline points="715,545 715,660" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)" />
+<text x="703.0" y="593.5" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#7c3aed">simulate</text>
+<polyline points="1030,545 1190,595 1410,595 1410,660" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)" />
+<text x="1098.0" y="561.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#7c3aed">compare</text>
+<polyline points="1125,730 1025,730" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)" />
+<text x="1063.0" y="721.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#7c3aed">usa</text>
+<polyline points="555,730 455,730" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)" />
+<text x="493.0" y="721.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#7c3aed">usa</text>
+<polyline points="1410,810 1410,835 275,835 275,810" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="1398.0" y="813.5" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#7c3aed">validação e conversões</text>
+<polyline points="275,860 275,810" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="263.0" y="826.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#7c3aed">exporta</text>
+<rect x="60" y="190" width="230" height="130" rx="12" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="78" y="221" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">1  Usuário</text>
+<text x="78" y="250" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Simular financiamento</text>
+<text x="78" y="274" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">ou comprar × alugar</text>
+<rect x="350" y="170" width="360" height="170" rx="12" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="368" y="201" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">2  Conversa no Codex</text>
+<text x="368" y="230" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">SKILL.md + references/analise.md</text>
+<text x="368" y="254" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Coleta premissas e esclarece unidades</text>
+<text x="368" y="278" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Orienta a execução do motor</text>
+<rect x="770" y="190" width="310" height="130" rx="12" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="788" y="221" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">3  Executor da skill</text>
+<text x="788" y="250" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">scripts/run.py</text>
+<text x="788" y="274" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Localiza src/ e chama cli.main()</text>
+<rect x="1370" y="170" width="370" height="170" rx="12" fill="#ecfdf5" stroke="#34d399" stroke-width="1.5"/>
+<text x="1388" y="201" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">6  Resposta ao usuário</text>
+<text x="1388" y="230" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Codex explica os resultados reais</text>
+<text x="1388" y="254" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Premissas, limites e comparação</text>
+<text x="1388" y="278" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Comando para reproduzir</text>
+<rect x="60" y="405" width="320" height="125" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="78" y="436" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Entrada alternativa · terminal</text>
+<text x="78" y="465" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">jurofaro / python -m jurofaro</text>
+<text x="78" y="489" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">__main__.py → cli.main()</text>
+<rect x="490" y="400" width="590" height="145" rx="12" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="508" y="431" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">4  Interface compartilhada · cli.py</text>
+<text x="508" y="460" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">argparse: simulate ou compare; valida entradas</text>
+<text x="508" y="484" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Converte % da CLI em frações para a API Python</text>
+<text x="508" y="508" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Despacha cálculos e formata texto / JSON</text>
+<rect x="1370" y="410" width="370" height="135" rx="12" fill="#ecfdf5" stroke="#34d399" stroke-width="1.5"/>
+<text x="1388" y="441" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">5  Resultados auditáveis</text>
+<text x="1388" y="470" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Premissas + resumo + cronograma</text>
+<text x="1388" y="494" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Texto: --schedule opcional</text>
+<text x="1388" y="518" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">JSON: cronograma completo</text>
+<rect x="95" y="660" width="360" height="150" rx="12" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="113" y="691" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">rates.py</text>
+<text x="113" y="720" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Validação numérica e de prazos</text>
+<text x="113" y="744" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Conversão de taxas efetivas</text>
+<text x="113" y="768" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Anual ↔ mensal</text>
+<rect x="555" y="660" width="470" height="150" rx="12" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="573" y="691" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">mortgage.py · simulate_mortgage</text>
+<text x="573" y="720" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Sistemas SAC e Price</text>
+<text x="573" y="744" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Prestação, juros, amortização e saldo</text>
+<text x="573" y="768" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Retorno: Mortgage + Installment</text>
+<rect x="1125" y="660" width="570" height="150" rx="12" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="1143" y="691" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">comparison.py · compare_buy_rent</text>
+<text x="1143" y="720" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Comprar financiado × alugar e investir</text>
+<text x="1143" y="744" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Mesmo capital inicial e orçamento mensal</text>
+<text x="1143" y="768" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Retorno: Comparison + ComparisonMonth</text>
+<rect x="95" y="860" width="360" height="100" rx="12" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="113" y="891" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">API Python · __init__.py</text>
+<text x="113" y="920" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Exporta funções e dataclasses</text>
+<text x="113" y="944" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Importação direta por outros scripts</text>
+<rect x="555" y="870" width="1140" height="90" rx="12" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.5"/>
+<text x="573" y="901" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Evolução da comparação</text>
+<text x="573" y="930" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Compra: imóvel − custos de venda − dívida + investimentos   |   Aluguel: carteira investida</text>
+<text x="573" y="954" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Aportes mensais após desembolsos; retorno líquido e custos definidos nas premissas</text>
+<rect x="60" y="1080" width="390" height="155" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="78" y="1111" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Testes e integração contínua</text>
+<text x="78" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">tests/ · unittest</text>
+<text x="78" y="1164" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Referências, invariantes, CLI e skill</text>
+<text x="78" y="1188" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">.github/workflows/tests.yml</text>
+<text x="78" y="1212" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Python 3.11 / 3.12 / 3.13</text>
+<rect x="490" y="1080" width="350" height="155" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="508" y="1111" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Cenários reproduzíveis</text>
+<text x="508" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">examples/run.sh</text>
+<text x="508" y="1164" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">SAC, Price e taxa menor</text>
+<text x="508" y="1188" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">CLI → arquivos JSON em results/</text>
+<text x="508" y="1212" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Mesmo orçamento entre cenários</text>
+<rect x="880" y="1080" width="390" height="155" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="898" y="1111" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Documentação e pacote</text>
+<text x="898" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">README.md · uso e arquitetura</text>
+<text x="898" y="1164" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">docs/modelo-financeiro.md</text>
+<text x="898" y="1188" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">pyproject.toml · setuptools</text>
+<text x="898" y="1212" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Python 3.11+; sem dependências runtime</text>
+<rect x="1310" y="1080" width="430" height="155" rx="12" fill="#fffbeb" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="1328" y="1111" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f172a">BCB · integração futura</text>
+<text x="1328" y="1140" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">docs/dados-bcb.md</text>
+<text x="1328" y="1164" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Pesquisa e critérios de validação</text>
+<text x="1328" y="1188" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Nenhuma API ou série integrada</text>
+<text x="1328" y="1212" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Taxas fornecidas pelo usuário</text>
+<text x="60" y="1310" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#475569">Leitura: 1 → 2 → 3 → 4 → motor → 5 → 6. Setas do motor indicam chamadas; resultados retornam pela CLI.</text>
+<text x="60" y="1345" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#475569">Escopo atual: offline, sem servidor ou banco. Juros fixos; sem TR/IPCA, seguros, tarifas ou cálculo de CET.</text>
+</svg>

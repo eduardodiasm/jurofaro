@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Arquitetura JuroFaro" id="jurofaro">
+    <mxGraphModel page="1" pageWidth="1800" pageHeight="1390">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" value="&lt;b&gt;1  Usuário&lt;/b&gt;&lt;br&gt;&lt;br&gt;Simular financiamento&lt;br&gt;ou comprar × alugar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="190" width="230" height="130" />
+        </mxCell>
+        <mxCell id="skill" value="&lt;b&gt;2  Conversa no Codex&lt;/b&gt;&lt;br&gt;&lt;br&gt;SKILL.md + references/analise.md&lt;br&gt;Coleta premissas e esclarece unidades&lt;br&gt;Orienta a execução do motor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="350" y="170" width="360" height="170" />
+        </mxCell>
+        <mxCell id="runner" value="&lt;b&gt;3  Executor da skill&lt;/b&gt;&lt;br&gt;&lt;br&gt;scripts/run.py&lt;br&gt;Localiza src/ e chama cli.main()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="190" width="310" height="130" />
+        </mxCell>
+        <mxCell id="report" value="&lt;b&gt;6  Resposta ao usuário&lt;/b&gt;&lt;br&gt;&lt;br&gt;Codex explica os resultados reais&lt;br&gt;Premissas, limites e comparação&lt;br&gt;Comando para reproduzir" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#34d399;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1370" y="170" width="370" height="170" />
+        </mxCell>
+        <mxCell id="direct" value="&lt;b&gt;Entrada alternativa · terminal&lt;/b&gt;&lt;br&gt;&lt;br&gt;jurofaro / python -m jurofaro&lt;br&gt;__main__.py → cli.main()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="405" width="320" height="125" />
+        </mxCell>
+        <mxCell id="cli" value="&lt;b&gt;4  Interface compartilhada · cli.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;argparse: simulate ou compare; valida entradas&lt;br&gt;Converte % da CLI em frações para a API Python&lt;br&gt;Despacha cálculos e formata texto / JSON" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#60a5fa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="490" y="400" width="590" height="145" />
+        </mxCell>
+        <mxCell id="output" value="&lt;b&gt;5  Resultados auditáveis&lt;/b&gt;&lt;br&gt;&lt;br&gt;Premissas + resumo + cronograma&lt;br&gt;Texto: --schedule opcional&lt;br&gt;JSON: cronograma completo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#34d399;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1370" y="410" width="370" height="135" />
+        </mxCell>
+        <mxCell id="rates" value="&lt;b&gt;rates.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;Validação numérica e de prazos&lt;br&gt;Conversão de taxas efetivas&lt;br&gt;Anual ↔ mensal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#a78bfa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="95" y="660" width="360" height="150" />
+        </mxCell>
+        <mxCell id="mortgage" value="&lt;b&gt;mortgage.py · simulate_mortgage&lt;/b&gt;&lt;br&gt;&lt;br&gt;Sistemas SAC e Price&lt;br&gt;Prestação, juros, amortização e saldo&lt;br&gt;Retorno: Mortgage + Installment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#a78bfa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="555" y="660" width="470" height="150" />
+        </mxCell>
+        <mxCell id="comparison" value="&lt;b&gt;comparison.py · compare_buy_rent&lt;/b&gt;&lt;br&gt;&lt;br&gt;Comprar financiado × alugar e investir&lt;br&gt;Mesmo capital inicial e orçamento mensal&lt;br&gt;Retorno: Comparison + ComparisonMonth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#a78bfa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1125" y="660" width="570" height="150" />
+        </mxCell>
+        <mxCell id="api" value="&lt;b&gt;API Python · __init__.py&lt;/b&gt;&lt;br&gt;&lt;br&gt;Exporta funções e dataclasses&lt;br&gt;Importação direta por outros scripts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#a78bfa;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="95" y="860" width="360" height="100" />
+        </mxCell>
+        <mxCell id="logic" value="&lt;b&gt;Evolução da comparação&lt;/b&gt;&lt;br&gt;&lt;br&gt;Compra: imóvel − custos de venda − dívida + investimentos   |   Aluguel: carteira investida&lt;br&gt;Aportes mensais após desembolsos; retorno líquido e custos definidos nas premissas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#ddd6fe;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="555" y="870" width="1140" height="90" />
+        </mxCell>
+        <mxCell id="tests" value="&lt;b&gt;Testes e integração contínua&lt;/b&gt;&lt;br&gt;&lt;br&gt;tests/ · unittest&lt;br&gt;Referências, invariantes, CLI e skill&lt;br&gt;.github/workflows/tests.yml&lt;br&gt;Python 3.11 / 3.12 / 3.13" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1080" width="390" height="155" />
+        </mxCell>
+        <mxCell id="examples" value="&lt;b&gt;Cenários reproduzíveis&lt;/b&gt;&lt;br&gt;&lt;br&gt;examples/run.sh&lt;br&gt;SAC, Price e taxa menor&lt;br&gt;CLI → arquivos JSON em results/&lt;br&gt;Mesmo orçamento entre cenários" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="490" y="1080" width="350" height="155" />
+        </mxCell>
+        <mxCell id="docs" value="&lt;b&gt;Documentação e pacote&lt;/b&gt;&lt;br&gt;&lt;br&gt;README.md · uso e arquitetura&lt;br&gt;docs/modelo-financeiro.md&lt;br&gt;pyproject.toml · setuptools&lt;br&gt;Python 3.11+; sem dependências runtime" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="880" y="1080" width="390" height="155" />
+        </mxCell>
+        <mxCell id="bcb" value="&lt;b&gt;BCB · integração futura&lt;/b&gt;&lt;br&gt;&lt;br&gt;docs/dados-bcb.md&lt;br&gt;Pesquisa e critérios de validação&lt;br&gt;Nenhuma API ou série integrada&lt;br&gt;Taxas fornecidas pelo usuário" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#fbbf24;fontColor=#0f172a;fontSize=16;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1310" y="1080" width="430" height="155" />
+        </mxCell>
+        <mxCell id="e0" value="pedido" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#64748b;fontColor=#64748b;dashed=0;" edge="1" parent="1" source="user" target="skill">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="premissas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#64748b;fontColor=#64748b;dashed=0;" edge="1" parent="1" source="skill" target="runner">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="executa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#64748b;fontColor=#64748b;dashed=0;" edge="1" parent="1" source="runner" target="cli">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="argumentos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#64748b;fontColor=#64748b;dashed=0;" edge="1" parent="1" source="direct" target="cli">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="retorno do motor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#059669;fontColor=#059669;dashed=0;" edge="1" parent="1" source="cli" target="output">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="JSON / texto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#059669;fontColor=#059669;dashed=0;" edge="1" parent="1" source="output" target="report">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="simulate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#7c3aed;fontColor=#7c3aed;dashed=0;" edge="1" parent="1" source="cli" target="mortgage">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="compare" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#7c3aed;fontColor=#7c3aed;dashed=0;" edge="1" parent="1" source="cli" target="comparison">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1190" y="595" />
+              <mxPoint x="1410" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="usa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#7c3aed;fontColor=#7c3aed;dashed=0;" edge="1" parent="1" source="comparison" target="mortgage">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="usa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#7c3aed;fontColor=#7c3aed;dashed=0;" edge="1" parent="1" source="mortgage" target="rates">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="validação e conversões" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#7c3aed;fontColor=#7c3aed;dashed=1;" edge="1" parent="1" source="comparison" target="rates">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1410" y="835" />
+              <mxPoint x="275" y="835" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="exporta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#7c3aed;fontColor=#7c3aed;dashed=1;" edge="1" parent="1" source="api" target="rates">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" value="JuroFaro · Arquitetura e jornada de uso · v0.1.0" style="text;html=1;align=left;fontSize=30;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="30" width="1680" height="60" />
+        </mxCell>
+        <mxCell id="motor" value="MOTOR PYTHON · DATACLASSES IMUTÁVEIS · SEM I/O" style="text;html=1;align=left;fontSize=18;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="605" width="1680" height="60" />
+        </mxCell>
+        <mxCell id="support" value="SUPORTE AO PROJETO E EVOLUÇÃO" style="text;html=1;align=left;fontSize=18;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1025" width="1680" height="60" />
+        </mxCell>
+        <mxCell id="footer" value="Jornada: usuário → conversa → executor → CLI → motor → resultados → explicação. BCB: futuro, sem integração atual." style="text;html=1;align=left;fontSize=18;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1290" width="1680" height="60" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
